@@ -205,3 +205,18 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Node / Next.js
+/node_modules
+/.next/
+/out/
+/build
+*.tsbuildinfo
+next-env.d.ts
+.env*
+!.env.local.example
+.vercel
+npm-debug.log*
+
+# 지도 원본 데이터(18MB). npm run build:maps 로 다시 받는다.
+/.cache/

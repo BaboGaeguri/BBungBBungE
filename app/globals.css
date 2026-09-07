@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #fff7f3;
+  --color-surface: #ffffff;
+  --color-blush: #ff8fa3;
+  --color-blush-soft: #ffd6de;
+  --color-blush-pale: #fff0f3;
+  --color-mint: #9ddfc4;
+  --color-lavender: #c9b8e8;
+  --color-butter: #ffe3a3;
+  --color-ink: #4a4048;
+  --color-ink-soft: #9a8f98;
+  --color-line: #f2e6ea;
+
+  --font-display: var(--font-jua), system-ui, sans-serif;
+  --font-body: var(--font-gowun), system-ui, sans-serif;
+
+  --radius-blob: 1.75rem;
+}
+
+html {
+  background: var(--color-cream);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  overscroll-behavior-y: none;
+}
+
+/* 모바일에서 입력창 포커스 시 자동 확대 방지 */
+input,
+textarea,
+select,
+button {
+  font-size: 16px;
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--color-blush-soft);
+}
