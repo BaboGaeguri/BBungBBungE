@@ -1,21 +1,6 @@
 import type { Metadata, Viewport } from "next";
-import { Gowun_Dodum, Jua } from "next/font/google";
 import { AuthProvider } from "@/lib/auth";
 import "./globals.css";
-
-const jua = Jua({
-  variable: "--font-jua",
-  subsets: ["latin"],
-  weight: "400",
-  display: "swap",
-});
-
-const gowun = Gowun_Dodum({
-  variable: "--font-gowun",
-  subsets: ["latin"],
-  weight: "400",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "뿡뿡이",
@@ -41,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ko" className={`${jua.variable} ${gowun.variable} h-full`}>
+    <html lang="ko" className="h-full">
       <body className="min-h-full antialiased">
         <AuthProvider>{children}</AuthProvider>
       </body>

@@ -13,8 +13,8 @@
   --color-ink-soft: #9a8f98;
   --color-line: #f2e6ea;
 
-  --font-display: var(--font-jua), system-ui, sans-serif;
-  --font-body: var(--font-gowun), system-ui, sans-serif;
+  --font-display: "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  --font-body: "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
 
   --radius-blob: 1.75rem;
 }
